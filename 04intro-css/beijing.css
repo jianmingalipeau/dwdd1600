@@ -1,7 +1,8 @@
 /* This is the start of my css. */
 
 body {
-    font-family: "Oxygen", serif;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
     margin: 0;
     background-image: url("images/palace1_bg.jpg"); 
     background-size: cover;     
