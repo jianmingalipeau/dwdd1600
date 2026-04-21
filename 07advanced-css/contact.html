@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Jianmin Galipeau">
+  <meta name="description" content="Tour in Beijing">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour in Beijing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="beijing.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <!--start the page head -->
+  <header>
+    <img src="images/beijing_logo80x80.png" alt="Beijing Logo">
+    <span>Tour in Beijing</span>
+  </header>
+
+  <!--start the page navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Tour in Beijing</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li class="active"><a href="contact.html">Contact Us</a></li>
+
+    </ul>
+
+  </nav>
+  <!--start the page content -->
+  <main>
+    <h1>Contact Us</h1>
+    <form method="get" action="thanks.html" class="myform">
+
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label>First Name: <input type="text" name="firstname" required></label>
+        <label>Last Name: <input type="text" name="lastname" required></label>
+        <label>Cell Number: <input type="tel" name="phone" required placeholder="789-123-4567"></label>
+      </fieldset>
+      <Fieldset>
+        <legend>Type of Inquiry</legend>
+        <label><input type="radio" name="inquiry" value="general"> General Question</label>
+        <label><input type="radio" name="inquiry" value="booking"> Tour Booking</label>
+        <label><input type="radio" name="inquiry" value="custom"> Custom Tour</label>
+        <label><input type="radio" name="inquiry" value="group"> Group Travel</label>
+
+      </Fieldset>
+      <fieldset>
+        <legend>Travel Interests</legend>
+        <label></label><input type="checkbox"> Forbidden City</label>
+        <label></label><input type="checkbox"> Great Wall</label>
+        <label></label><input type="checkbox"> Summer Palace</label>
+        <label></label><input type="checkbox"> Temple of Heaven</label>
+        <label></label><input type="checkbox"> Olympic Park</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="date">Preferred Travel Date:</label>
+        <input type="date" id="date" name="date">
+        
+        <label for="time">Preferred Time of Day:</label>
+        <select id="time" name="time">
+          <option value="">Please Select</option>
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+        </select>
+    
+
+      </fieldset>
+      <label>Message:
+        <textarea name="message"></textarea>
+      </label>
+      <input type="submit" value="Send Request">
+    </form>
+
+  </main>
+
+  <!--start the page footer -->
+  <footer>
+    <p>&copy; 2026 &bull; Tour in Beijing &bull; <a href="mailto:rosybb2012@gmail.com">Email Us</p>
+
+  </footer>
+
+</body>
+
+</html>
