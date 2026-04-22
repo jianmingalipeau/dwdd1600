@@ -157,7 +157,10 @@ main h2 {
     color: #024873;
     margin: 0.8rem 0 0.3rem 0;
 }
-
+main h3 {
+    color: #1a6a9c;
+    margin-bottom: 0.3rem;
+}
 main p {
     color: #333;
     margin-top: .5rem;
@@ -325,6 +328,30 @@ figure.wrapped figcaption {
     margin: 1rem 0 0 1vw;
 }
 
+/* table stuff here */
+table.activities {
+    width: 100%;
+    border: 2px solid #2a727f;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+table.activities th {
+    background-color: #4ca0ae;
+    color: white;
+    padding: .6rem 2%;
+    text-align: left;
+}
+table.activities td {
+    color:#2a8797;
+    padding: .4rem 2%;
+}
+table.activities tr:nth-child(odd) {
+    background-color: #e7e6e6;
+}
+table.activities tr:hover {
+    background-color: #cee0e3;
+}
 
 /* This is footer stuff here. */
 
