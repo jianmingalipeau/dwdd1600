@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jianmin Galipeau">
+    <meta name="description" content="Tour in Chongqing">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour in Chongqing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="chongqing.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body class="contact">
+    <!--start the page head -->
+    <header>
+        <img src="images/chongqing_logo80x80.png" alt="Chongqing Logo">
+        <div class="title-group">
+            <span>8D City Chongqing</span>
+            <p class="subtitle">Explore China's most unique mountain city</p>
+        </div>
+    </header>
+
+    <!--start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">City Highlights</a></li>
+            <li><a href="guide.html">Visitor Guide</a></li>
+            <li class="active"><a href="contact.html">Plan Your Trip</a></li>
+        </ul>
+    </nav>
+
+    <!--start the page content -->
+    <main>
+        <h1>Plan Your Trip</h1>
+        <form method="get" action="thanks.html" class="myform">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name: <input type="text" name="firstname" required></label>
+                <label>Last Name: <input type="text" name="lastname" required></label>
+                <label>Cell Number: <input type="tel" name="phone" required placeholder="789-123-4567"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Type of Inquiry</legend>
+                <label><input type="radio" name="inquiry" value="general"> General Question</label>
+                <label><input type="radio" name="inquiry" value="booking"> Tour Booking</label>
+                <label><input type="radio" name="inquiry" value="custom"> Custom Tour</label>
+                <label><input type="radio" name="inquiry" value="group"> Group Travel</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Travel Interests</legend>
+                <label><input type="checkbox" name="interest" value="hongya"> Hongya Cave</label>
+                <label><input type="checkbox" name="interest" value="liziba"> Liziba Metro Station</label>
+                <label><input type="checkbox" name="interest" value="cableway"> Yangtze River Cableway</label>
+                <label><input type="checkbox" name="interest" value="ciqikou"> Ciqikou Ancient Town</label>
+                <label><input type="checkbox" name="interest" value="hotpot"> Hot Pot Experience</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="date">Preferred Travel Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="time">Preferred Time of Day:</label>
+                <select id="time" name="time">
+                    <option value="">Please Select</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+            </fieldset>
+
+            <label>Message:
+                <textarea name="message"></textarea>
+            </label>
+            <input type="submit" value="Send Request">
+        </form>
+        <h2>Our Address</h2>
+        <address>
+            <h4>Visit Chongqing</h4>
+            Jiefangbei, Yuzhong District<br>
+            Chongqing, China 400000<br>
+            Call us at <a href="tel:+86(23)63800000">+86(23)63800000</a> to schedule a visit
+        </address>
+    </main>
+
+    <!--start the page footer -->
+    <footer>
+        <p>&copy; 2026 &bull; Visit Chongqing &bull; <a href="mailto:rosybb2012@gmail.com">Email Us</a></p>
+    </footer>
+
+</body>
+
+</html>

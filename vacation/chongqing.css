@@ -1,0 +1,450 @@
+/* This is the start of my css. */
+
+/*Prevent Problems on Different Browsers*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.home {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)),
+        url('images/chongqing_bg.jpg');
+}
+
+.destinations {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.85)),
+        url('images/headerbg_chongqing.jpg');
+}
+
+.guide {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.7)),
+        url('images/bg.webp');
+}
+
+.contact {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.85)),
+        url('images/cableway.jpg');
+}
+
+/* This is header area. */
+header {
+    background-image: url('images/header_chongqing.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 auto;
+    padding: 1rem 2vw;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+}
+
+header span {
+    display: block;
+    max-width: 1100px;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #253858;
+    letter-spacing: .5px;
+}
+.title-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #000000;
+    opacity: 0.9;
+}
+
+/* small screen navigation */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: solid 1px #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    nav .active a {
+        background-color: #8b2f2f;
+        color: #fff;
+        background-image: linear-gradient(to bottom, #a33d2f, #5e1f1a);
+    }
+}
+
+/* LARGE SCREEN NAVIGATION */
+@media only screen and (min-width: 801px) {
+    nav {
+        border-top: solid 1px #E0E6E6;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        padding: 1.2rem 1rem .3rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    nav .active a {
+        border-bottom: solid 2px #f4c542;
+    }
+
+    nav a:hover {
+        color: #f4c542;
+    }
+}
+
+/* This is navigation area. */
+nav {
+    background-color: #34859c;
+}
+
+nav li.active a {
+    background-color: #50bbc9;
+    color: #ffffff;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+/* This is main stuff here. */
+main {
+    padding: 0 2vw 1rem 2vw;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 0.1rem;
+}
+
+.intro p {
+    width: 45%;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-top: 0;
+}
+
+main dd {
+    max-width: 900px;
+}
+
+main h1 {
+    color: #8b2f2f;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 0.3rem;
+}
+
+main h2 {
+    color: #253858;
+    margin: 0.8rem 0 0.3rem 0;
+}
+
+main h3 {
+    color: #1c6b82;
+    margin-bottom: 0.3rem;
+}
+
+main p {
+    color: #333;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+main ol {
+    padding: 2rem;
+    background-color: rgba(201, 214, 224, 0.72);
+    line-height: 125%;
+    list-style-type: lower-alpha;
+}
+
+main dl dt {
+    color: #8b2f2f;
+    line-height: 150%;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+main dl dd {
+    color: #253858;
+    font-size: .9rem;
+    margin-left: 20px;
+    margin-top: .3rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 1.2;
+    margin-bottom: .6rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #bdebef;
+    padding: .7rem;
+    width: 30rem;
+    text-align: center;
+    border: 2px dashed #ffffff;
+    border-radius: .8rem;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+/* 控制视频和下面内容间距 */
+iframe {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+/* wrapped image for index page only */
+figure.wrapped {
+    width: 50%;
+    margin: 0;
+    order: 2;   
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 100px 0 100px 0;
+    box-shadow: 20px 20px 0 #e7e7e7;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #8b2f2f;
+    margin-top: 0.8rem;
+}
+
+/* gallery layout for images */
+.gallery {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+    flex: 1 1 250px;
+    max-width: 600px;
+    margin: 0;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;  
+    object-position: center;
+    border-radius: 80px;
+    display: block;
+    transition: transform 0.3s ease;  
+}
+
+.gallery img:hover {
+    transform: scale(1.08);  
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gallery figcaption {
+    margin-top: 0.05rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.85rem;
+    color: #8b2f2f;
+}
+
+/* This is Contact us stuff here. */
+.myform fieldset {
+    border: 1px solid #1c6b82;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.myform legend {
+    color: #253858;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.myform label {
+    margin: .5rem;
+}
+
+.myform label,
+.myform select,
+.myform [type=text],
+.myform [type=tel],
+.myform textarea {
+    display: block;
+}
+
+.myform select,
+.myform [type=text],
+.myform [type=tel],
+.myform textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.myform textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 12rem;
+}
+
+.myform :required {
+    background-color: rgba(139, 47, 47, .25);
+}
+
+.myform [type=submit] {
+    background-color: #253858;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 1rem 0 0 1vw;
+}
+
+/* table stuff here */
+table.activities {
+    width: 100%;
+    border: 2px solid #34859c;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table.activities th {
+    background-color: #34859c;
+    color: white;
+    padding: .6rem 2%;
+    text-align: left;
+}
+
+table.activities td {
+    color: #34859c;
+    padding: .4rem 2%;
+}
+
+table.activities tr:nth-child(odd) {
+    background-color: #efeded;
+}
+
+table.activities tr:hover {
+    background-color: #d7f8fd;
+}
+/* This is card stuff here. */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 {
+    margin: 0.5rem 0;
+    color: #8b2f2f;
+}
+
+.card p {
+    font-size: 0.9rem;
+}
+/* This is footer stuff here. */
+footer {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
